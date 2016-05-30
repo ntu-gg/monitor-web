@@ -9,11 +9,13 @@ app.get('/', function(req, res) {
 });
 
 app.get('/api/jobs', function(req, res) {
-  sequelize.query("SELECT `id`, `url` FROM `jobs`", { type: sequelize.QueryTypes.SELECT })
-    .then(res.json)
-    .catch(function(err) {
+  sequelize.query("SELECT `id`, `url` FROM `job`", { type: sequelize.QueryTypes.SELECT })
+    .then(function(jobs) {
+      return res.json(jobs);
+    }).catch(function(err) {
+      console.error(err);
       return res.status(500).json({
-        msg: 'error!'
+        err: err
       });
     });
 });

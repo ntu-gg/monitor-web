@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ntu-gg/monitor-web",
   "dependencies": {
     "express": "^4.13.4",
+    "mysql": "^2.10.2",
     "sequelize": "^3.23.3"
   }
 }
