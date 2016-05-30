@@ -1,0 +1,23 @@
+{
+  "name": "monitor-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ntu-gg/monitor-web"
+  },
+  "author": "shouko <imshouko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ntu-gg/monitor-web/issues"
+  },
+  "homepage": "https://github.com/ntu-gg/monitor-web",
+  "dependencies": {
+    "express": "^4.13.4",
+    "sequelize": "^3.23.3"
+  }
+}
